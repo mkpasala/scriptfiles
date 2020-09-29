@@ -102,7 +102,7 @@ var customNodeUI = {
 			}else if(i == 5){
 
 				var label = document.createElement("label");
-				label.innerHTML = "End Date";
+				label.innerHTML = "End Date2";
 				label.setAttribute('class', 'slds-form-element__label');
 				fieldDivContiner.appendChild(label);
 				input = document.createElement("input");
