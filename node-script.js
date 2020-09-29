@@ -18,7 +18,7 @@ var customNodeUI = {
 
 	addFields: function (containerId) {
 		// Number of inputs to create
-		var number = 6;
+		var number = 7;
 		// Container <div> where dynamic content will be placed
 		var container = document.getElementById(containerId);
 		// Clear previous contents of the container
@@ -109,6 +109,16 @@ var customNodeUI = {
 				input.id = "task_enddate";
 				input.name = "task_enddate";
 				input.type = "date";
+				input.setAttribute('class', 'slds-input');
+			}else if(i == 6){
+				var label = document.createElement("label");
+				label.innerHTML = "Task type";
+				label.setAttribute('class', 'slds-form-element__label');
+				fieldDivContiner.appendChild(label);
+				input = document.createElement("input");
+				input.id = "task_type";
+				input.name = "task_type";
+				input.type = "text";
 				input.setAttribute('class', 'slds-input');
 			}
 			input.setAttribute('autocomplete', 'off');
